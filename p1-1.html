@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="body1 {.css).css"
+  <title>Library Management System</title>
+</head>
+<body>
+  <!-- Librarian Admin Section -->
+
+  <h1>Librarian Admin</h1>
+
+  <!-- Login Form -->
+  <form action="/login" method="post">
+    <label for="adminUsername">Username:</label>
+    <input type="text" id="adminUsername" name="adminUsername" required>
+    <label for="adminPassword">Password:</label>
+    <input type="password" id="adminPassword" name="adminPassword" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- Add Book Form -->
+  <form action="/addBook" method="post">
+    <!-- Include relevant input fields for book details -->
+    <button type="submit">Add Book</button>
+  </form>
+
+  <!-- Update/Delete Book Form -->
+  <form action="/updateBook" method="post">
+    <!-- Include relevant input fields for book details -->
+    <button type="submit">Update/Delete Book</button>
+  </form>
+
+  <!-- Issue Book Form -->
+  <form action="/issueBook" method="post">
+    <!-- Include relevant input fields for book and student details -->
+    <button type="submit">Issue Book</button>
+  </form>
+
+  <!-- Return Book Status -->
+  <form action="/returnBook" method="post">
+    <!-- Include relevant input fields for book and student details -->
+    <button type="submit">Return Book Status</button>
+  </form>
+
+  <!-- Make Fine Form -->
+  <form action="/makeFine" method="post">
+    <!-- Include relevant input fields for fine calculation -->
+    <button type="submit">Make Fine</button>
+  </form>
+
+  <!-- User Section -->
+
+  <h1>User</h1>
+
+  <!-- Login Form for User -->
+  <form action="/userLogin" method="post">
+    <label for="userUsername">Username:</label>
+    <input type="text" id="userUsername" name="userUsername" required>
+    <label for="userPassword">Password:</label>
+    <input type="password" id="userPassword" name="userPassword" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- Registration Form for User -->
+  <form action="/registerUser" method="post">
+    <!-- Include relevant input fields for user registration -->
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Search Book Form -->
+  <form action="/searchBook" method="post">
+    <label for="bookSearch">Search Book:</label>
+    <input type="text" id="bookSearch" name="bookSearch" required>
+    <button type="submit">Search Book</button>
+  </form>
+
+  <!-- My Borrow History -->
+  <h2>My Borrow History</h2>
+  <!-- Display user's borrowing history with issue and expiration dates -->
+
+  <!-- Check Fine Form -->
+  <form action="/checkFine" method="post">
+    <button type="submit">Check Fine</button>
+  </form>
+
+  <!-- Search Material Form -->
+  <form action="/searchMaterial" method="post">
+    <!-- Include relevant input fields for material search -->
+    <button type="submit">Search Material</button>
+  </form>
+
+  <!-- Download Material -->
+  <button onclick="downloadMaterial()">Download Material</button>
+
+  <!-- My Profile -->
+  <h2>My Profile</h2>
+  <!-- Display user's profile information -->
+
+  <script>
+    function downloadMaterial() {
+      // Logic for downloading material
+    }
+  </script>
+
+</body>
+
+</html>

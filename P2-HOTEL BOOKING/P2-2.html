@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hotel Booking System</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Hotel Booking System</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- User Registration and Profile -->
+        <section id="user-section">
+            <h2>User Section</h2>
+            <!-- User Registration Form -->
+            <div id="registration-form">
+                <form action="#" method="post" id="user-registration-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <!-- User Profile Section -->
+            <div id="user-profile">
+                <!-- Display user profile information -->
+                <h3>User Profile</h3>
+                <!-- Include user profile details here -->
+            </div>
+
+            <!-- Booking Section -->
+            <div id="booking-section">
+                <!-- Include form elements for room booking -->
+                <form action="#" method="post" id="room-booking-form">
+                    <label for="check-in-date">Check-in Date:</label>
+                    <input type="date" id="check-in-date" name="check-in-date" required>
+
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" name="room-type" required>
+                        <!-- Include room type options here -->
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                        <option value="penthouse">Penthouse</option>
+                    </select>
+
+                    <button type="submit">Book Room</button>
+                </form>
+            </div>
+
+            <!-- Booking History Section -->
+            <div id="booking-history">
+                <!-- Display user booking history -->
+                <h3>Booking History</h3>
+                <!-- Include user booking history details here -->
+            </div>
+        </section>
+
+        <!-- Administrator Section -->
+        <section id="admin-section">
+            <h2>Administrator Section</h2>
+            <!-- Administrator Login Form -->
+            <div id="admin-login-form">
+                <form action="#" method="post" id="admin-login-form">
+                    <label for="admin-username">Admin Username:</label>
+                    <input type="text" id="admin-username" name="admin-username" placeholder="Enter admin username" required>
+
+                    <label for="admin-password">Admin Password:</label>
+                    <input type="password" id="admin-password" name="admin-password" placeholder="Enter admin password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+            <!-- Room Management Section -->
+            <div id="room-management">
+                <!-- Include form elements for changing room quantity and price -->
+                <form action="#" method="post" id="room-management-form">
+                    <label for="room-type-select">Room Type:</label>
+                    <select id="room-type-select" name="room-type-select" required>
+                        <!-- Include room type options here -->
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                        <option value="penthouse">Penthouse</option>
+                    </select>
+
+                    <label for="new-quantity">New Quantity:</label>
+                    <input type="number" id="new-quantity" name="new-quantity" required>
+
+                    <label for="new-price">New Price:</label>
+                    <input type="number" id="new-price" name="new-price" required>
+
+                    <button type="submit">Update Room</button>
+                </form>
+            </div>
+
+            <!-- Booking Management Section -->
+            <div id="booking-management">
+                <!-- Include form elements for changing booking details -->
+                <form action="#" method="post" id="booking-management-form">
+                    <label for="booking-id">Booking ID:</label>
+                    <input type="text" id="booking-id" name="booking-id" placeholder="Enter Booking ID" required>
+
+                    <!-- Include other booking details that can be changed -->
+
+                    <button type="submit">Update Booking</button>
+                </form>
+            </div>
+
+            <!-- Static Page Management Section -->
+            <div id="static-page-management">
+                <!-- Include form elements for modifying static pages -->
+                <form action="#" method="post" id="static-page-management-form">
+                    <!-- Include fields for modifying static pages -->
+
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <h3>Hotel Information</h3>
+        <!-- Include basic room type introduction, contact information, etc. -->
+    </footer>
+</body>
+</html>

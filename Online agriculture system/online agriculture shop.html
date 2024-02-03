@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="online agriculutre shop.css">
+    <title>Online Agri Shop</title>
+    <!-- You can link additional stylesheets or scripts here -->
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Agri Shop</h1>
+    </header>
+
+    <!-- Farmer Section -->
+    <section id="farmer-section">
+        <h2>Farmer</h2>
+        <!-- Farmer Registration Form -->
+        <form id="farmer-registration-form">
+            <label for="farmer-name">Name:</label>
+            <input type="text" id="farmer-name" name="farmer-name" required><br>
+            <label for="farmer-email">Email:</label>
+            <input type="email" id="farmer-email" name="farmer-email" required><br>
+            <label for="farmer-mobile">Mobile Number:</label>
+            <input type="text" id="farmer-mobile" name="farmer-mobile" required><br>
+            <label for="farmer-password">Password:</label>
+            <input type="password" id="farmer-password" name="farmer-password" required><br>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Farmer Login Form -->
+        <form id="farmer-login-form">
+            <label for="farmer-username">Username:</label>
+            <input type="text" id="farmer-username" name="farmer-username" required><br>
+            <label for="farmer-password">Password:</label>
+            <input type="password" id="farmer-password" name="farmer-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Add Product Form -->
+        <form id="add-product-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required><br>
+            <label for="product-price">Price:</label>
+            <input type="number" id="product-price" name="product-price" required><br>
+            <label for="product-description">Description:</label>
+            <textarea id="product-description" name="product-description" required></textarea><br>
+            <button type="submit">Add Product</button>
+        </form>
+
+        <!-- Update/Delete Product Form -->
+        <form id="update-delete-product-form">
+            <label for="product-id">Product ID:</label>
+            <input type="text" id="product-id" name="product-id" required><br>
+            <label for="new-product-name">New Product Name:</label>
+            <input type="text" id="new-product-name" name="new-product-name"><br>
+            <label for="new-product-price">New Price:</label>
+            <input type="number" id="new-product-price" name="new-product-price"><br>
+            <label for="new-product-description">New Description:</label>
+            <textarea id="new-product-description" name="new-product-description"></textarea><br>
+            <button type="submit">Update Product</button>
+            <button type="button" onclick="deleteProduct()">Delete Product</button>
+        </form>
+
+        <!-- Upload Images Form -->
+        <form id="upload-images-form" enctype="multipart/form-data">
+            <label for="product-image">Upload Image:</label>
+            <input type="file" id="product-image" name="product-image" required><br>
+            <button type="submit">Upload</button>
+        </form>
+
+        <!-- Manage Orders -->
+        <h3>Manage Orders</h3>
+        <!-- Display and manage orders here -->
+
+        <!-- Update Order Status Form -->
+        <form id="update-order-status-form">
+            <label for="order-id">Order ID:</label>
+            <input type="text" id="order-id" name="order-id" required><br>
+            <label for="new-status">New Status:</label>
+            <input type="text" id="new-status" name="new-status" required><br>
+            <button type="submit">Update Status</button>
+        </form>
+
+        <!-- My Sales -->
+        <h3>My Sales</h3>
+        <!-- Display farmer's sales history here -->
+
+        <!-- Update Shipping Status Form -->
+        <form id="update-shipping-status-form">
+            <label for="order-id-shipping">Order ID:</label>
+            <input type="text" id="order-id-shipping" name="order-id-shipping" required><br>
+            <label for="shipping-status">Shipping Status:</label>
+            <input type="text" id="shipping-status" name="shipping-status" required><br>
+            <button type="submit">Update Shipping Status</button>
+        </form>
+
+        <!-- Farmer Logout Button -->
+        <button onclick="farmerLogout()">Logout</button>
+    </section>
+
+    <!-- Public Section -->
+    <section id="public-section">
+        <h2>Public</h2>
+        <!-- Public Registration Form -->
+        <form id="public-registration-form">
+            <label for="public-name">Name:</label>
+            <input type="text" id="public-name" name="public-name" required><br>
+            <label for="public-email">Email:</label>
+            <input type="email" id="public-email" name="public-email" required><br>
+            <label for="public-mobile">Mobile Number:</label>
+            <input type="text" id="public-mobile" name="public-mobile" required><br>
+            <label for="public-password">Password:</label>
+            <input type="password" id="public-password" name="public-password" required><br>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Public Login Form -->
+        <form id="public-login-form">
+            <label for="public-username">Username:</label>
+            <input type="text" id="public-username" name="public-username" required><br>
+            <label for="public-password">Password:</label>
+            <input type="password" id="public-password" name="public-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Manage Wallet Balance -->
+        <h3>Manage Wallet Balance</h3>
+        <!-- Display and manage wallet balance here -->
+
+        <!-- Search Product Form -->
+        <form id="search-product-form">
+            <label for="search-query">Search:</label>
+            <input type="text" id="search-query" name="search-query" required><br>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Edit/Delete Cart Form -->
+        <form id="edit-delete-cart-form">
+            <!-- Display cart items and edit/delete options -->
+        </form>
+
+        <!-- Add/Edit Shipping Address Form -->
+        <form id="shipping-address-form">
+            <label for="shipping-address

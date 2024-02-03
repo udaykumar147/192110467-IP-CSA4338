@@ -1,0 +1,86 @@
+/* Basic styling for the header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Basic styling for section headings */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Styling for forms */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Styling for Farmer and Public sections */
+#farmer-section,
+#public-section {
+    margin-bottom: 30px;
+}
+
+/* Styling for Farmer and Public section headings */
+#farmer-section h2,
+#public-section h2 {
+    color: #4CAF50;
+}
+
+/* Styling for Farmer and Public logout buttons */
+button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Styling for Manage Orders and My Sales sections */
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+/* Styling for input[type="file"] */
+input[type="file"] {
+    margin-top: 5px;
+}
+
+/* Additional styles can be added as needed */

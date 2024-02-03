@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blood bank system.css">
+    <title>Blood Bank Management System</title>
+    <!-- You can link additional stylesheets or scripts here -->
+</head>
+<body>
+    <header>
+        <h1>Blood Bank Management System</h1>
+    </header>
+
+    <!-- Donor/User Section -->
+    <section id="donor-section">
+        <h2>Donor/User</h2>
+        <!-- Donor/User Login Form -->
+        <form id="user-login-form">
+            <label for="user-username">Username:</label>
+            <input type="text" id="user-username" name="user-username" required><br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Donor/User Registration Form -->
+        <form id="user-registration-form">
+            <!-- User details inputs -->
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- My Donor Info -->
+        <button onclick="viewDonorInfo()">My Donor Info</button>
+
+        <!-- Search Blood Bank Details Form -->
+        <form id="search-blood-bank-form">
+            <label for="search-keyword">Search:</label>
+            <input type="text" id="search-keyword" name="search-keyword" required><br>
+            <button type="submit">Search Blood Bank Details</button>
+        </form>
+    </section>
+
+    <!-- Hospital Section -->
+    <section id="hospital-section">
+        <h2>Hospital</h2>
+        <!-- Hospital Registration Form -->
+        <form id="hospital-registration-form">
+            <!-- Hospital details inputs -->
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Post Donor Information Form -->
+        <form id="post-donor-info-form">
+            <!-- Donor information inputs -->
+            <button type="submit">Post Donor Information</button>
+        </form>
+
+        <!-- Search Donor Details Form -->
+        <form id="search-donor-details-form">
+            <label for="search-donor">Search:</label>
+            <input type="text" id="search-donor" name="search-donor" required><br>
+            <button type="submit">Search Donor Details</button>
+        </form>
+
+        <!-- Hospital Login Form -->
+        <form id="hospital-login-form">
+            <label for="hospital-username">Username:</label>
+            <input type="text" id="hospital-username" name="hospital-username" required><br>
+            <label for="hospital-password">Password:</label>
+            <input type="password" id="hospital-password" name="hospital-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Update Blood Group Status Form -->
+        <form id="update-blood-group-status-form">
+            <label for="blood-group">Blood Group:</label>
+            <select id="blood-group" name="blood-group">
+                <!-- Blood group options -->
+            </select><br>
+            <button type="submit">Update Blood Group Status</button>
+        </form>
+
+        <!-- Post Blood Bank Info Form -->
+        <form id="post-blood-bank-info-form">
+            <!-- Blood bank information inputs -->
+            <button type="submit">Post Blood Bank Info</button>
+        </form>
+
+        <!-- View Blood Bank Details -->
+        <button onclick="viewBloodBankDetails()">View Blood Bank Details</button>
+
+        <!-- Hospital Logout -->
+        <button onclick="hospitalLogout()">Logout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blood Bank Management System</p>
+    </footer>
+</body>
+</html>

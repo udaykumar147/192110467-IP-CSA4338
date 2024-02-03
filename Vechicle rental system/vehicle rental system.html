@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vehicle rental system.css">
+    <title>Online Vehicle Rental System</title>
+    <!-- You can link additional stylesheets or scripts here -->
+</head>
+<body>
+    <header>
+        <h1>Online Vehicle Rental System</h1>
+    </header>
+
+    <!-- User Section -->
+    <section id="user-section">
+        <h2>User</h2>
+        <!-- User Registration Form -->
+        <form id="user-registration-form">
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" name="user-name" required><br>
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" name="user-email" required><br>
+            <label for="user-mobile">Mobile Number:</label>
+            <input type="text" id="user-mobile" name="user-mobile" required><br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password" required><br>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- User Login Form -->
+        <form id="user-login-form">
+            <label for="user-username">Username:</label>
+            <input type="text" id="user-username" name="user-username" required><br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Search Vehicle Details Form -->
+        <form id="search-vehicle-form">
+            <label for="search-keyword">Search:</label>
+            <input type="text" id="search-keyword" name="search-keyword" required><br>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Select Vehicle & Make Booking Form -->
+        <form id="make-booking-form">
+            <!-- Vehicle details will be displayed based on search -->
+            <!-- User inputs for name, customer number, address, type -->
+            <button type="submit">Make Booking</button>
+        </form>
+
+        <!-- View Booking Status -->
+        <button onclick="viewBookingStatus()">View Booking Status</button>
+
+        <!-- My Profile -->
+        <button onclick="viewProfile()">My Profile</button>
+
+        <!-- Appointment Booking -->
+        <form id="appointment-booking-form">
+            <!-- Schedule appointment details -->
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <!-- Appointment Management -->
+        <button onclick="viewAppointments()">View Appointments</button>
+
+        <!-- Past Appointment Management -->
+        <button onclick="viewPastAppointments()">View Past Appointments</button>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin-section">
+        <h2>Admin</h2>
+        <!-- Admin Login Form -->
+        <form id="admin-login-form">
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="admin-username" required><br>
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Add Vehicle Form -->
+        <form id="add-vehicle-form">
+            <!-- Vehicle details inputs -->
+            <button type="submit">Add Vehicle</button>
+        </form>
+
+        <!-- Manage Vehicle Details -->
+        <!-- Display and manage vehicle details -->
+
+        <!-- Manage Booking Details -->
+        <!-- Display and manage booking details -->
+
+        <!-- Approve User Booking Form -->
+        <form id="approve-booking-form">
+            <label for="booking-id">Booking ID:</label>
+            <input type="text" id="booking-id" name="booking-id" required><br>
+            <button type="submit">Approve Booking</button>
+        </form>
+
+        <!-- My Profile -->
+        <button onclick="adminProfile()">My Profile</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Vehicle Rental System</p>
+    </footer>
+</body>
+</html>

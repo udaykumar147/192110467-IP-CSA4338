@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travel agency.css">
+    <title>Travel Agency Website</title>
+    <!-- You can link additional stylesheets or scripts here -->
+</head>
+<body>
+    <header>
+        <h1>Travel Agency Website</h1>
+    </header>
+
+    <!-- User Section -->
+    <section id="user-section">
+        <h2>User</h2>
+        <!-- User Registration Form -->
+        <form id="user-registration-form">
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" name="user-name" required><br>
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" name="user-email" required><br>
+            <label for="user-username">Username:</label>
+            <input type="text" id="user-username" name="user-username" required><br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password" required><br>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- User Login Form -->
+        <form id="user-login-form">
+            <label for="user-username">Username:</label>
+            <input type="text" id="user-username" name="user-username" required><br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- View Food Details -->
+        <button onclick="viewFoodDetails()">View Food Details</button>
+
+        <!-- View Hostel Details -->
+        <button onclick="viewHostelDetails()">View Hostel Details</button>
+
+        <!-- View Route Details -->
+        <button onclick="viewRouteDetails()">View Route Details</button>
+
+        <!-- My Book Accommodation -->
+        <button onclick="bookAccommodation()">Book Accommodation</button>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin-section">
+        <h2>Admin</h2>
+        <!-- Admin Login Form -->
+        <form id="admin-login-form">
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="admin-username" required><br>
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Post Tourism Details Form -->
+        <form id="post-tourism-details-form">
+            <label for="tourism-location">Location:</label>
+            <input type="text" id="tourism-location" name="tourism-location" required><br>
+            <label for="tourism-description">Description:</label>
+            <textarea id="tourism-description" name="tourism-description" required></textarea><br>
+            <button type="submit">Post Tourism Details</button>
+        </form>
+
+        <!-- Manage Food Details Form -->
+        <form id="manage-food-details-form">
+            <label for="food-name">Food Name:</label>
+            <input type="text" id="food-name" name="food-name" required><br>
+            <label for="food-description">Description:</label>
+            <textarea id="food-description" name="food-description" required></textarea><br>
+            <button type="submit">Manage Food Details</button>
+        </form>
+
+        <!-- Manage Hotel Details Form -->
+        <form id="manage-hotel-details-form">
+            <label for="hotel-name">Hotel Name:</label>
+            <input type="text" id="hotel-name" name="hotel-name" required><br>
+            <label for="hotel-location">Location:</label>
+            <input type="text" id="hotel-location" name="hotel-location" required><br>
+            <button type="submit">Manage Hotel Details</button>
+        </form>
+
+        <!-- Manage Route Details Form -->
+        <form id="manage-route-details-form">
+            <label for="route-from">From:</label>
+            <input type="text" id="route-from" name="route-from" required><br>
+            <label for="route-to">To:</label>
+            <input type="text" id="route-to" name="route-to" required><br>
+            <button type="submit">Manage Route Details</button>
+        </form>
+
+        <!-- View Booking Details -->
+        <button onclick="viewBookingDetails()">View Booking Details</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Agency Website</p>
+    </footer>
+</body>
+</html>

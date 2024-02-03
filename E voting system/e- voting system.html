@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="e-voting system.css">
+    <title>E-Voting System</title>
+    <!-- You can link additional stylesheets or scripts here -->
+</head>
+<body>
+    <header>
+        <h1>E-Voting System</h1>
+    </header>
+
+    <!-- User Section -->
+    <section id="user-section">
+        <h2>User</h2>
+        <!-- Voter Registration Form -->
+        <form id="voter-registration-form">
+            <label for="voter-id">Voter ID:</label>
+            <input type="text" id="voter-id" name="voter-id" required><br>
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="text" id="mobile-number" name="mobile-number" required><br>
+            <button type="submit">Register</button>
+        </form>
+        
+        <!-- OTP Verification Form -->
+        <form id="otp-verification-form">
+            <label for="otp">Enter OTP:</label>
+            <input type="text" id="otp" name="otp" required><br>
+            <button type="submit">Verify OTP</button>
+        </form>
+
+        <!-- Candidate Selection -->
+        <h3>Candidates:</h3>
+        <ul id="candidate-list">
+            <li>
+                <label>
+                    <input type="radio" name="candidate" value="candidate1"> Candidate 1
+                </label>
+                <button type="button" onclick="vote()">Vote</button>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="candidate" value="candidate2"> Candidate 2
+                </label>
+                <button type="button" onclick="vote()">Vote</button>
+            </li>
+            <!-- Add more candidate options here -->
+        </ul>
+
+        <!-- Voting Status -->
+        <div id="voting-status">
+            <!-- Display voting status here -->
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin-section">
+        <h2>Admin</h2>
+        <!-- Election Candidate Creation Form -->
+        <form id="election-candidate-form">
+            <label for="candidate-name">Candidate Name:</label>
+            <input type="text" id="candidate-name" name="candidate-name" required><br>
+            <button type="submit">Create Candidate</button>
+        </form>
+
+        <!-- Election Data Allocation Form -->
+        <form id="election-allocation-form">
+            <label for="election-id">Election ID:</label>
+            <input type="text" id="election-id" name="election-id" required><br>
+            <label for="candidate-id">Candidate ID:</label>
+            <input type="text" id="candidate-id" name="candidate-id" required><br>
+            <button type="submit">Allocate Candidate</button>
+        </form>
+
+        <!-- User Allocation to Wards Form -->
+        <form id="user-ward-allocation-form">
+            <label for="user-id">User ID:</label>
+            <input type="text" id="user-id" name="user-id" required><br>
+            <label for="ward-id">Ward ID:</label>
+            <input type="text" id="ward-id" name="ward-id" required><br>
+            <button type="submit">Allocate User to Ward</button>
+        </form>
+
+        <!-- Voter List Management -->
+        <h3>Voter List Management</h3>
+        <form id="voter-list-management-form">
+            <label for="import-voter-list">Import Voter List:</label>
+            <input type="file" id="import-voter-list" name="import-voter-list" accept=".csv"><br>
+            <button type="submit">Import</button>
+        </form>
+        <div id="view-update-voter-list">
+            <!-- Display and update voter list here -->
+        </div>
+
+        <!-- Election Results -->
+        <button onclick="getElectionResults()">Get Election Results</button>
+        <div id="election-results">
+            <!-- Display election results here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 E-Voting System</p>
+    </footer>
+
+    <!-- JavaScript for voting functionality -->
+    <script>
+        function vote() {
+            var candidate = document.querySelector('input[name="candidate"]:checked').value;
+            // Send candidate vote to server
+            // Display voting status
+            document.getElementById('voting-status').innerText = "Your vote for " + candidate + " has been recorded.";
+        }
+    </script>
+</body>
+</html>

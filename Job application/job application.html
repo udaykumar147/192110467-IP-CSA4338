@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="job application.css">
+    <title>Job Application Website</title>
+    <!-- You can link additional stylesheets or scripts here -->
+</head>
+<body>
+    <header>
+        <h1>Job Application Website</h1>
+    </header>
+
+    <!-- Admin Section -->
+    <section id="admin-section">
+        <h2>Admin</h2>
+        <!-- Admin Login Form -->
+        <form id="admin-login-form">
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="admin-username" required><br>
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Approve Director Form -->
+        <form id="approve-director-form">
+            <label for="director-id">Director ID:</label>
+            <input type="text" id="director-id" name="director-id" required><br>
+            <button type="submit">Approve Director</button>
+        </form>
+
+        <!-- View User -->
+        <button onclick="viewUsers()">View Users</button>
+
+        <!-- View Report -->
+        <button onclick="viewReport()">View Report</button>
+    </section>
+
+    <!-- Director Section -->
+    <section id="director-section">
+        <h2>Director</h2>
+        <!-- Director Registration Form -->
+        <form id="director-registration-form">
+            <!-- Director details inputs -->
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Director Login Form -->
+        <form id="director-login-form">
+            <label for="director-username">Username:</label>
+            <input type="text" id="director-username" name="director-username" required><br>
+            <label for="director-password">Password:</label>
+            <input type="password" id="director-password" name="director-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Post Vacancy Form -->
+        <form id="post-vacancy-form">
+            <!-- Vacancy details inputs -->
+            <button type="submit">Post Vacancy</button>
+        </form>
+
+        <!-- View Vacancy -->
+        <button onclick="viewVacancy()">View Vacancy</button>
+
+        <!-- View Applied Users -->
+        <button onclick="viewAppliedUsers()">View Applied Users</button>
+
+        <!-- Director Logout -->
+        <button onclick="directorLogout()">Logout</button>
+    </section>
+
+    <!-- User Section -->
+    <section id="user-section">
+        <h2>User</h2>
+        <!-- User Registration Form -->
+        <form id="user-registration-form">
+            <!-- User details inputs -->
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- User Login Form -->
+        <form id="user-login-form">
+            <label for="user-username">Username:</label>
+            <input type="text" id="user-username" name="user-username" required><br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Search Vacancy Form -->
+        <form id="search-vacancy-form">
+            <label for="search-keyword">Search:</label>
+            <input type="text" id="search-keyword" name="search-keyword" required><br>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Filter Vacancy Form -->
+        <form id="filter-vacancy-form">
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <!-- Location options -->
+            </select><br>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <!-- Category options -->
+            </select><br>
+            <button type="submit">Filter</button>
+        </form>
+
+        <!-- Apply for Vacancy Form -->
+        <form id="apply-for-vacancy-form">
+            <!-- Vacancy details and user inputs -->
+            <button type="submit">Apply</button>
+        </form>
+
+        <!-- User Logout -->
+        <button onclick="userLogout()">Logout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Job Application Website</p>
+    </footer>
+</body>
+</html>

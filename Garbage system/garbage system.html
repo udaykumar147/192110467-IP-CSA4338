@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="garbage system.css">
+    <title>Garbage Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Garbage Management System</h1>
+    </header>
+
+    <!-- Administrator Section -->
+    <section id="admin-section">
+        <h2>Administrator</h2>
+        <!-- Admin Login Form -->
+        <form id="admin-login-form">
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="admin-username" required><br>
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Create Garbage Bin Form -->
+        <form id="create-garbage-bin-form">
+            <label for="bin-location">Location:</label>
+            <input type="text" id="bin-location" name="bin-location" required><br>
+            <label for="bin-capacity">Capacity:</label>
+            <input type="number" id="bin-capacity" name="bin-capacity" required><br>
+            <button type="submit">Create Garbage Bin</button>
+        </form>
+
+        <!-- Update/Delete Garbage Bin Form -->
+        <form id="update-delete-bin-form">
+            <label for="bin-id">Bin ID:</label>
+            <input type="text" id="bin-id" name="bin-id" required><br>
+            <button type="submit">Update/Delete Garbage Bin</button>
+        </form>
+
+        <!-- Assign Best Route Form -->
+        <form id="assign-route-form">
+            <label for="driver-id">Driver ID:</label>
+            <input type="text" id="driver-id" name="driver-id" required><br>
+            <label for="route">Route:</label>
+            <input type="text" id="route" name="route" required><br>
+            <button type="submit">Assign Best Route</button>
+        </form>
+
+        <!-- Manage Driver Form -->
+        <form id="manage-driver-form">
+            <label for="driver-name">Driver Name:</label>
+            <input type="text" id="driver-name" name="driver-name" required><br>
+            <label for="driver-contact">Driver Contact:</label>
+            <input type="text" id="driver-contact" name="driver-contact" required><br>
+            <button type="submit">Manage Driver</button>
+        </form>
+
+        <!-- View Garbage Report -->
+        <button onclick="viewGarbageReport()">View Garbage Report</button>
+
+        <!-- View Public Complaints -->
+        <button onclick="viewComplaints()">View Complaints from Public</button>
+    </section>
+
+    <!-- General Public Section -->
+    <section id="public-section">
+        <h2>General Public</h2>
+        <!-- Public Registration Form -->
+        <form id="public-registration-form">
+            <!-- Public details inputs -->
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Public Login Form -->
+        <form id="public-login-form">
+            <label for="public-username">Username:</label>
+            <input type="text" id="public-username" name="public-username" required><br>
+            <label for="public-password">Password:</label>
+            <input type="password" id="public-password" name="public-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Register Complaint Form -->
+        <form id="register-complaint-form">
+            <label for="complaint-description">Complaint Description:</label>
+            <textarea id="complaint-description" name="complaint-description" required></textarea><br>
+            <button type="submit">Register Complaint</button>
+        </form>
+
+        <!-- View My Complaints & Status -->
+        <button onclick="viewMyComplaints()">View My Complaints & Status</button>
+    </section>
+
+    <!-- Driver Section -->
+    <section id="driver-section">
+        <h2>Driver</h2>
+        <!-- Driver Login Form -->
+        <form id="driver-login-form">
+            <label for="driver-username">Username:</label>
+            <input type="text" id="driver-username" name="driver-username" required><br>
+            <label for="driver-password">Password:</label>
+            <input type="password" id="driver-password" name="driver-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Check Daily Work Updates Form -->
+        <form id="check-daily-work-form">
+            <button type="submit">Check Daily Work Updates</button>
+        </form>
+
+        <!-- Choose Best Route Form -->
+        <form id="choose-route-form">
+            <label for="route-options">Route Options:</label>
+            <select id="route-options" name="route-options">
+                <!-- List of available routes -->
+            </select><br>
+            <button type="submit">Choose Best Route</button>
+        </form>
+
+        <!-- Update Garbage Load Form -->
+        <form id="update-garbage-load-form">
+            <label for="garbage-load">Garbage Load:</label>
+            <input type="number" id="garbage-load" name="garbage-load" required><br>
+            <button type="submit">Update Garbage Load</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Garbage Management System</p>
+    </footer>
+</body>
+</html>
